@@ -1,0 +1,30 @@
+
+//@import "../assets/mixin/mixin.scss";
+
+@mixin font-prop($family,$style,$weight,$size,$height) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+//@include font-prop(Roboto,normal,500,16px,20px);
+@mixin flex-prop($direction,$justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+//@include flex-prop(row,space-between);
+
+@mixin img-center-size($width,$height){
+    width: $width;
+    height: $height;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $my_menu_btn_color;
+    border-radius: 20px;
+  }
+//@include img-center-size(60px,60px);
